@@ -64,7 +64,7 @@ export default function Signup() {
     };
 
     try {
-      const response = await axios.post("http://localhost:7000/save", userData);
+      const response = await axios.post("http://localhost:8080/save", userData);
 
       if (response.status === 200) {
         console.log("User registered successfully");
